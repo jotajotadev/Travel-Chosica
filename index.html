@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina de Travel Chosica">
+    <meta name="keywords" content="practica Frontend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Chosica</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/075b67f81a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo-header" src="img/logo primary.svg" alt="logo del header">
+        <nav class="nav">
+            <ul class="list-nav">
+                <li class="item-list"><a href="#" class="home">Home</a></li>
+                <li class="item-list"><a href="#" class="about">Acerca de Mi</a></li>
+                <li class="item-list"><a href="#" class="plans">Planes</a></li>
+                <li class="item-list"><a href="#" class="components">Componentes</a></li>
+                <li class="item-list"><a href="#" class="contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <i id="toggle-menu" class="fas fa-align-right"></i>
+    </header>
+    <div class="container-hero">
+        <div class="hero">
+            <div class="content-hero">
+                <h1 class="h1">El viaje que necesitas,<span> ahora a tu alcance</span></h1>
+                <a class="button-primary" href="#">ver planes</a>
+            </div>
+            <img class="img-hero" src="img/hero.png" alt="imagen de un crucero">
+        </div>
+    </div>
+    <div>
+        <section class="cards-details-container">
+            <article class="card-details">
+                <img class="img-card-details" src="img/ttarget.svg" alt="icono de un diana o target">
+                <h4 class="title-card-details">Objetivos</h4>
+                <p class="paragraph-details">Practicar como Frontend</p>
+            </article>
+            <article class="card-details">
+                <img class="img-card-details" src="img/web.svg" alt="icono de un diana o target">
+                <h4 class="title-card-details">Tecnologías</h4>
+                <p class="paragraph-details">HTML, CSS, JavaScript</p>
+            </article>
+            <article class="card-details">
+                <img class="img-card-details" src="img/tool.svg" alt="icono de un diana o target">
+                <h4 class="title-card-details">Herramientas</h4>
+                <p class="paragraph-details">Figma</p>
+            </article>
+            <article class="card-details">
+                <img class="img-card-details" src="img/recursos.svg" alt="icono de un diana o target">
+                <h4 class="title-card-details">Recursos</h4>
+                <p class="paragraph-details">pexels, iconscout</p>
+            </article>
+            <article class="card-details">
+                <img class="img-card-details" src="img/tipografia.svg" alt="icono de un diana o target">
+                <h4 class="title-card-details">Tipografías</h4>
+                <p class="paragraph-details">Raleway</p>
+            </article>
+        </section>
+    </div>
+
+    <div class="wrap">
+        <section class="section-travel">
+            <img class="img-section-travel" src="img/disfruta.png" alt="imagen de dos mujeres viajando">
+            <h3 class="text-section-travel">
+                Disfruta los mejores momentos en familia, <span>con un viaje a cualquier destino del mundo.</span>
+            </h3>
+        </section>
+    </div>
+
+    <div>
+        <section class="cards-travels">
+            <article class="card-travel">
+                <img class="img-card-travel" src="img/viaje1.png" alt="imagen de machu picchu">
+                <div class="content-card-travel">
+                    <p class="category">Destino</p>
+                    <h3 class="title-card-travel">Machu Picchu Perú</h3>
+                    <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                    <a class="button-secondary" href="#">ver proyecto</a>
+                </div>
+            </article>
+            <article class="card-travel">
+                <img class="img-card-travel" src="img/viaje3.png" alt="imagen de machu picchu">
+                <div class="content-card-travel">
+                    <p class="category">Destino</p>
+                    <h3 class="title-card-travel">Colombia</h3>
+                    <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                    <a class="button-secondary" href="#">ver proyecto</a>
+                </div>
+            </article>
+            <article class="card-travel">
+                <img class="img-card-travel" src="img/viaje4.png" alt="imagen de machu picchu">
+                <div class="content-card-travel">
+                    <p class="category">Destino</p>
+                    <h3 class="title-card-travel">Isla de pascua Chile</h3>
+                    <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                    <a class="button-secondary" href="#">ver proyecto</a>
+                </div>
+            </article>
+            <article class="card-travel">
+                <img class="img-card-travel" src="img/viaje2.png" alt="imagen de machu picchu">
+                <div class="content-card-travel">
+                    <p class="category">Destino</p>
+                    <h3 class="title-card-travel">México</h3>
+                    <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                    <a class="button-secondary" href="#">ver proyecto</a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div class="wrap">
+        <section class="section-contact">
+            <div class="form-container">
+                <h4 class="title-form">Envíanos un mensaje</h4>
+                <form class="form-contact" action="" method="post">
+                    <input class="input" type="text" name="name-user" placeholder="Nombre*" required>
+                    <input class="input" type="email" name="email-user" placeholder="Correo*" required>
+                    <input class="input message" type="text" name="message-user" placeholder="Mensaje">
+                    <input class="button-primary" type="submit">
+                </form>
+            </div>
+            <img class="img-section-contact" src="img/contacto.png" alt="mujer atendiento un teléfono">
+        </section>
+    </div>
+    <footer class="footer">
+        <img class="logo-footer" src="img/logo primary.svg" alt="logo del footer">
+        <nav class="nav-footer">
+            <ul class="list-nav-footer">
+                <li class="item-list-footer"><a href="#">Home</a></li>
+                <li class="item-list-footer"><a href="#">Acerca de Mi</a></li>
+                <li class="item-list-footer"><a href="#">Planes</a></li>
+                <li class="item-list-footer"><a href="#">Componentes</a></li>
+                <li class="item-list-footer"><a href="#">Contacto</a></li>
+            </ul>   
+        </nav>
+    </footer>
+</body>
+</html>
