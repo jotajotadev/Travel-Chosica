@@ -1,0 +1,80 @@
+.hero {
+    margin-top: 56px;
+    background-color: $primary-blue-variant;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: $interface-white;
+    text-align: center;
+}
+
+.wrap {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.section-about-1 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .img-section-about-1 {
+        display: block;
+        width: 100%;
+    }
+    .text-section-about-1 {
+        font-size: 24px;
+        color: $interface-black-2;
+        line-height: 1.5em;
+        span {
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+}
+.title-details-container {
+    font-size: 32px;
+    color: $interface-black-2;
+    text-align: center;
+}
+.cards-details-container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 2rem 1.5rem;
+    max-width: 1440px;
+    margin-bottom: 100px;
+    .card-details {
+        flex-shrink: 0;
+        width: 229px;
+        padding: 1rem;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+        margin-right: 1.2rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title-card-details {
+            font-size: 24px;
+            color: $interface-black-1;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .paragraph-details {
+            color: $interface-black-2;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+}
+.section-about-2 {
+    margin-bottom: 150px;
+    .img-section-about-2 {
+        display: block;
+        width: 100%;
+    }
+    .text-section-about-2 {
+        font-size: 24px;
+        color: $interface-black-2;
+    }
+}

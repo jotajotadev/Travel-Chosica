@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina de Travel Chosica">
+    <meta name="keywords" content="practica Frontend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Chosica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/datails.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/075b67f81a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="logo-header" src="img/logo primary.svg" alt="logo del header">
+        </a>
+        <nav class="nav" id="navigation">
+            <ul class="list-nav">
+                <li class="item-list"><a href="index.html" class="home">Home</a></li>
+                <li class="item-list"><a href="acerca-de-nosotros.html" class="about">Acerca de Mi</a></li>
+                <li class="item-list"><a href="components.html" class="components">Componentes</a></li>
+                <li class="item-list"><a href="contact.html" class="contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <i id="toggle-menu" class="fas fa-align-right"></i>
+    </header>
+
+    <div class="hero">
+    </div>
+
+    <article class="card-survey">
+        <img  class="card-image-survey" src="img/big image.jpg" alt="imagen de machu picchu">
+        <div class="card-content">
+            <p class="subtitle">
+                Destino
+            </p>
+            <h3 class="title-card-survey">Machu Picchu Perú</h3>
+            <p class="description-card-survey">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            </p>
+            <div class="wrap-inputs">
+                <select class="select-days input" name="days" id="days">
+                    <option selected disabled>Dias</option>
+                    <option value="2days">2 dias y 3 noches</option>
+                    <option value="4days">4 dias y 5 noches</option>
+                    <option value="6days">6 dias y 7 noches</option>
+                </select>
+                <input class="date input" type="date">
+            </div>
+            <a class="button-primary" href="#">Reservar</a>
+        </div>
+    </article>
+
+    <div class="gallery">
+        <img class="image" src="img/gallery 1.jpg" alt="imagen de dos persona mirando una cascada">
+        <img class="image" src="img/gallery 2.jpg" alt="imagen de tres personas tomando sol en un bus">
+        <img class="image" src="img/gallery 3.jpg" alt="imagen de una mujer con lentes de sol sonriendo">
+        <img class="image" src="img/gallery 4.jpg" alt="imagen de una playa con casas flotando en el medio del mar">
+    </div>
+
+    <div class="wrap">
+        <h2 class="title-card-travels">
+            Destinos que te pueden interesar
+        </h2>
+        <div>
+            <section class="cards-travels">
+                <article class="card-travel">
+                    <img class="img-card-travel" src="img/viaje1.png" alt="imagen de machu picchu">
+                    <div class="content-card-travel">
+                        <p class="category">Destino</p>
+                        <h3 class="title-card-travel">Machu Picchu Perú</h3>
+                        <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                        <a class="button-secondary" href="detalles-del-viaje.html">ver destino</a>
+                    </div>
+                </article>
+                <article class="card-travel">
+                    <img class="img-card-travel" src="img/viaje3.png" alt="imagen de machu picchu">
+                    <div class="content-card-travel">
+                        <p class="category">Destino</p>
+                        <h3 class="title-card-travel">Colombia</h3>
+                        <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                        <a class="button-secondary" href="detalles-del-viaje.html">ver destino</a>
+                    </div>
+                </article>
+                <article class="card-travel">
+                    <img class="img-card-travel" src="img/viaje4.png" alt="imagen de machu picchu">
+                    <div class="content-card-travel">
+                        <p class="category">Destino</p>
+                        <h3 class="title-card-travel">Isla de pascua Chile</h3>
+                        <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                        <a class="button-secondary" href="detalles-del-viaje.html">ver destino</a>
+                    </div>
+                </article>
+                <article class="card-travel">
+                    <img class="img-card-travel" src="img/viaje2.png" alt="imagen de machu picchu">
+                    <div class="content-card-travel">
+                        <p class="category">Destino</p>
+                        <h3 class="title-card-travel">México</h3>
+                        <p class="description-card-travel">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                        <a class="button-secondary" href="detalles-del-viaje.html">ver destino</a>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img class="logo-footer" src="img/logo primary.svg" alt="logo del footer">
+        <nav class="nav-footer">
+            <ul class="list-nav-footer">
+                <li class="item-list-footer"><a href="index.html">Home</a></li>
+                <li class="item-list-footer"><a href="acerca-de-nosotros.html">Acerca de Mi</a></li>
+                <li class="item-list-footer"><a href="components.html">Componentes</a></li>
+                <li class="item-list-footer"><a href="contact.html">Contacto</a></li>
+            </ul>   
+        </nav>
+    </footer>
+
+    <script src="script/toggle.js"></script>
+    </body>
+</html>

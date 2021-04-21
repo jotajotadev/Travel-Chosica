@@ -1,0 +1,278 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* colors */
+.button-primary {
+  padding: 1rem 2rem;
+  border-radius: 1.6rem;
+  background-color: #344DA8;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.button-primary:hover {
+  background-color: #5370D4;
+}
+
+.button-secondary {
+  padding: 1rem 2rem;
+  border-radius: 1.6rem;
+  background-color: #FFFFFF;
+  color: #344DA8;
+  border: 2px solid #344DA8;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.button-secondary:hover {
+  background-color: #5370D4;
+  border-color: #5370D4;
+  color: #FFFFFF;
+}
+
+.input {
+  padding: 1rem;
+  border: 1px solid #2A2B2E;
+  border-radius: 1rem;
+}
+
+.input::placeholder {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2A2B2E;
+}
+
+.header {
+  max-width: 1440px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*menu*/
+}
+
+.header .logo-header {
+  width: 140px;
+}
+
+.header #navigation {
+  transition: 300ms ease;
+}
+
+.header .nav {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 100%;
+}
+
+.header .nav .list-nav {
+  list-style: none;
+  padding: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.header .nav .list-nav .item-list {
+  margin-bottom: 8px;
+}
+
+.header .nav .list-nav .item-list a {
+  text-decoration: none;
+  color: #2A2B2E;
+}
+
+.header .nav .list-nav .item-list a:hover {
+  font-weight: 700;
+  color: #5370D4;
+}
+
+.header .nav .list-nav .item-list:last-child {
+  margin-bottom: 0;
+}
+
+.header .nav-header {
+  background-color: #FFFFFF;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.header .fas {
+  font-size: 20px;
+  color: #5370D4;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+
+.footer .logo-footer {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.footer .nav-footer .list-nav-footer {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+.footer .nav-footer .list-nav-footer .item-list-footer {
+  margin-bottom: 0.5rem;
+}
+
+.footer .nav-footer .list-nav-footer .item-list-footer a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #505156;
+}
+
+.footer .nav-footer .list-nav-footer .item-list-footer a:hover {
+  color: #5370D4;
+}
+
+.hero {
+  height: 100px;
+  background-color: #5370D4;
+  margin-top: 56px;
+}
+
+.card-survey {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.card-survey .card-image-survey {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-survey .card-content .subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #344DA8;
+}
+
+.card-survey .card-content .title-card-survey {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  color: #2A2B2E;
+}
+
+.card-survey .card-content .description-card-survey {
+  color: #505156;
+}
+
+.card-survey .card-content .wrap-inputs {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.card-survey .card-content .wrap-inputs .date {
+  margin-left: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #505156;
+}
+
+.card-survey .card-content .wrap-inputs .select-days {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #505156;
+}
+
+.card-survey .card-content .wrap-inputs > * {
+  width: 100%;
+}
+
+.card-survey .card-content .button-primary {
+  width: 100%;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  height: 204px;
+  overflow-x: scroll;
+  margin-left: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+.wrap .title-card-travels {
+  font-size: 32px;
+  color: #505156;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.cards-travels {
+  padding: 2rem 1.5rem;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 150px;
+}
+
+.cards-travels .card-travel {
+  flex-shrink: 0;
+  width: 229px;
+  margin-right: 1.2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cards-travels .card-travel .img-card-travel {
+  display: block;
+  width: 100%;
+}
+
+.cards-travels .card-travel .content-card-travel {
+  padding: 20px 1rem;
+}
+
+.cards-travels .card-travel .content-card-travel .category {
+  color: #5370D4;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cards-travels .card-travel .content-card-travel .title-card-travel {
+  color: #2A2B2E;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.cards-travels .card-travel .content-card-travel .description-card-travel {
+  font-size: 14px;
+  color: #505156;
+}
+/*# sourceMappingURL=datails.css.map */

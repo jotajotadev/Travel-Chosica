@@ -1,0 +1,28 @@
+.hero {
+    margin-top: 56px;
+    height: 100px;
+    background-color: $primary-blue-variant;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    .title-hero {
+        font-size: 24px;
+        color: $interface-white;
+    }
+}
+.wrap {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.section-contact {
+    margin-bottom: 150px;
+    .img-section-contact {
+        display: block;
+        width: 100%;
+    }
+    .text-section-contact {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+}

@@ -1,0 +1,107 @@
+.hero {
+    height: 100px;
+    background-color: $primary-blue-variant;
+    margin-top: 56px;
+}
+.card-survey {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    .card-image-survey {
+        display: block;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .card-content {
+        .subtitle {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: $primary-blue;
+        }
+        .title-card-survey {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 24px;
+            color: $interface-black-1;
+        }
+        .description-card-survey {
+            color: $interface-black-2;
+        }
+        .wrap-inputs {
+            display: flex;
+            margin-bottom: 1rem;
+            .date {
+                margin-left: 1rem;
+                font-family: "Raleway", sans-serif;
+                font-weight: 700;
+                color: $interface-black-2;
+            }
+            .select-days {
+                font-weight: 700;
+                font-family: "Raleway", sans-serif;
+                color: $interface-black-2;
+            }
+        }
+        .wrap-inputs > * {
+            width: 100%;
+        }
+        .button-primary {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.gallery {
+    display: flex;
+    height: 204px;
+    overflow-x: scroll;
+    margin-left: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+.wrap {
+    .title-card-travels {
+        font-size: 32px;
+        color: $interface-black-2;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.cards-travels {
+    padding: 2rem 1.5rem;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 150px;
+    .card-travel {
+        flex-shrink: 0;
+        width: 229px;
+        margin-right: 1.2rem;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+        .img-card-travel {
+            display: block;
+            width: 100%;
+        }
+        .content-card-travel {
+            padding: 20px 1rem;
+            .category {
+                color: $primary-blue-variant;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .title-card-travel {
+                color: $interface-black-1;
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+            .description-card-travel {
+                font-size: 14px;
+                color: $interface-black-2;
+            }
+        }
+    }
+}

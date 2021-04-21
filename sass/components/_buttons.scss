@@ -1,0 +1,39 @@
+.button-primary {
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+    background-color: $primary-blue;
+    color: $interface-white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+}
+.button-primary:hover {
+    background-color: $primary-blue-variant;
+}
+.button-secondary {
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+    background-color: $interface-white;
+    color: $primary-blue;
+    border: 2px solid $primary-blue;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+}
+.button-secondary:hover {
+    background-color: $primary-blue-variant;
+    border-color: $primary-blue-variant;
+    color: $interface-white;
+}
+.input {
+    padding: 1rem;
+    border: 1px solid $interface-black-1;
+    border-radius: 1rem;
+}
+.input::placeholder {
+    font-weight: 700;
+    font-size: 1rem;
+    color: $interface-black-1;
+}
