@@ -6,7 +6,9 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-primary:hover {
     background-color: $primary-blue-variant;
@@ -16,11 +18,13 @@
     border-radius: 1.6rem;
     background-color: $interface-white;
     color: $primary-blue;
-    border: 2px solid $primary-blue;
+    border: 1px solid $primary-blue;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-secondary:hover {
     background-color: $primary-blue-variant;
@@ -31,6 +35,8 @@
     padding: 1rem;
     border: 1px solid $interface-black-1;
     border-radius: 1rem;
+    font-family: "Raleway", sans-serif;
+    background-color: $interface-white;
 }
 .input::placeholder {
     font-weight: 700;

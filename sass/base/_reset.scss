@@ -1,9 +1,12 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-}
-*,
-*::before,
-*::after {
+html {
     box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
 }

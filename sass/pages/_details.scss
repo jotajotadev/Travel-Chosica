@@ -60,9 +60,14 @@
     margin-left: 1.5rem;
     border-radius: 8px;
     margin-bottom: 100px;
+    img {
+        width: 299px;
+    }
 }
 .wrap {
     .title-card-travels {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         font-size: 32px;
         color: $interface-black-2;
         text-align: center;
