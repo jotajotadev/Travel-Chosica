@@ -1,6 +1,13 @@
+.full-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .header {
     max-width: 1440px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -52,5 +59,25 @@
     .fas {
         font-size: 20px;
         color: $primary-blue-variant;
+    }
+    @media screen and (min-width: $large){
+        .logo-header {
+            width: 230px;
+        }
+        .nav {
+            position: static;
+            width: initial;
+            .list-nav {
+                display: flex;
+                padding: 0;
+                .item-list {
+                    padding-right: 0.5rem;
+                    padding-left: 0.5rem;
+                }
+            }  
+        }
+        .fas {
+            display: none;
+        }
     }
 }

@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 /* colors */
@@ -63,9 +64,17 @@ body {
   color: #2A2B2E;
 }
 
+.full-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .header {
   max-width: 1440px;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -129,6 +138,27 @@ body {
   color: #5370D4;
 }
 
+@media screen and (min-width: 992px) {
+  .header .logo-header {
+    width: 230px;
+  }
+  .header .nav {
+    position: static;
+    width: initial;
+  }
+  .header .nav .list-nav {
+    display: flex;
+    padding: 0;
+  }
+  .header .nav .list-nav .item-list {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .header .fas {
+    display: none;
+  }
+}
+
 .footer {
   padding-bottom: 50px;
 }
@@ -162,6 +192,17 @@ body {
   color: #5370D4;
 }
 
+@media screen and (min-width: 576px) {
+  .footer .nav-footer .list-nav-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .nav-footer .list-nav-footer .item-list-footer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 .hero {
   margin-top: 56px;
   background-color: #5370D4;
@@ -172,6 +213,14 @@ body {
   font-size: 24px;
   color: #FFFFFF;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    margin-top: 84px;
+    height: 200px;
+    font-size: 32px;
+  }
 }
 
 .wrap {
@@ -198,6 +247,26 @@ body {
 .section-about-1 .text-section-about-1 span {
   font-weight: 400;
   font-style: italic;
+}
+
+@media screen and (min-width: 992px) {
+  .section-about-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 953px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-about-1 .img-section-about-1 {
+    width: 345px;
+  }
+  .section-about-1 .text-section-about-1 {
+    width: 466px;
+    font-size: 32px;
+  }
 }
 
 .title-details-container {
@@ -239,6 +308,13 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .cards-details-container {
+    justify-content: center;
+    overflow-x: auto;
+  }
+}
+
 .section-about-2 {
   margin-bottom: 150px;
 }
@@ -251,5 +327,22 @@ body {
 .section-about-2 .text-section-about-2 {
   font-size: 24px;
   color: #505156;
+}
+
+@media screen and (min-width: 992px) {
+  .section-about-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 953px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-about-2 .img-section-about-2 {
+    width: 345px;
+  }
+  .section-about-2 .text-section-about-2 {
+    width: 466px;
+    font-size: 32px;
+  }
 }
 /*# sourceMappingURL=about.css.map */

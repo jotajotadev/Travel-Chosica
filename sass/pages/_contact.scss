@@ -10,6 +10,13 @@
         font-size: 24px;
         color: $interface-white;
     }
+    @media screen and (min-width: $large) {
+        height: 200px;
+        margin-top: 84px;
+        .title-hero {
+            font-size: 32px;
+        }
+    }
 }
 .wrap {
     padding-left: 1.5rem;
@@ -24,5 +31,22 @@
     .text-section-contact {
         font-size: 24px;
         line-height: 1.5em;
+    }
+    @media screen and (min-width: $large) {
+        margin-top: 150px;
+        display: flex;
+        max-width: 954px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: space-between;
+        .img-section-contact {
+            width: 354px;
+            order: 1;
+        }
+        .text-section-contact {
+            max-width: 466px;
+            font-size: 32px;
+        }
     }
 }

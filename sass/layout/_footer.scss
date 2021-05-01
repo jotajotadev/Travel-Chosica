@@ -26,4 +26,16 @@
             }
         }
     }
+    @media screen and (min-width: $small){
+        .nav-footer {
+            .list-nav-footer {
+                display: flex;
+                justify-content: center;
+                .item-list-footer {
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
 }

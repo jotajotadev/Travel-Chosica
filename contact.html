@@ -12,20 +12,22 @@
     <script src="https://kit.fontawesome.com/075b67f81a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img class="logo-header" src="img/logo primary.svg" alt="logo del header">
-        </a>
-        <nav class="nav" id="navigation">
-            <ul class="list-nav">
-                <li class="item-list"><a href="index.html" class="home">Home</a></li>
-                <li class="item-list"><a href="acerca-de-nosotros.html" class="about">Acerca de Mi</a></li>
-                <li class="item-list"><a href="components.html" class="components">Componentes</a></li>
-                <li class="item-list"><a href="contact.html" class="contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <i id="toggle-menu" class="fas fa-align-right"></i>
-    </header>
+    <div class="full-header">
+        <header class="header">
+            <a href="index.html">
+                <img class="logo-header" src="img/logo primary.svg" alt="logo del header">
+            </a>
+            <nav class="nav" id="navigation">
+                <ul class="list-nav">
+                    <li class="item-list"><a href="index.html" class="home">Home</a></li>
+                    <li class="item-list"><a href="acerca-de-nosotros.html" class="about">Acerca de Mi</a></li>
+                    <li class="item-list"><a href="components.html" class="components">Componentes</a></li>
+                    <li class="item-list"><a href="contact.html" class="contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <i id="toggle-menu" class="fas fa-align-right"></i>
+        </header>
+    </div>
     <div class="hero">
         <h3 class="title-hero">Contacto
         </h3>
@@ -34,10 +36,12 @@
     <div class="wrap">
         <section class="section-contact">
             <img class="img-section-contact" src="img/contact.png" alt="imagen de un boceto o wireframe">
-            <h3 class="text-section-contact">
-                Si deseas puedes revisar más información acerca de mi en mi portafolio.
-            </h3>
-            <a class="button-primary" href="https://jotajotadev.github.io/portafolio/" target="_blank">revisar portafolio</a>
+            <div>
+                <h3 class="text-section-contact">
+                    Si deseas puedes revisar más información acerca de mi en mi portafolio.
+                </h3>
+                <a class="button-primary" href="https://jotajotadev.github.io/portafolio/" target="_blank">revisar portafolio</a>
+            </div>
         </section>
     </div>
 

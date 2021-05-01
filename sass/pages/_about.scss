@@ -8,6 +8,11 @@
     font-size: 24px;
     color: $interface-white;
     text-align: center;
+    @media screen and (min-width: $large) {
+        margin-top: 84px;
+        height: 200px;
+        font-size: 32px;
+    }
 }
 
 .wrap {
@@ -29,6 +34,23 @@
         span {
             font-weight: 400;
             font-style: italic;
+        }
+    }
+    @media screen and (min-width: $large) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 953px;
+        margin-left: auto;
+        margin-right: auto;
+        .img-section-about-1 {
+            width: 345px;
+        }
+        .text-section-about-1 {
+            width: 466px;
+            font-size: 32px;
         }
     }
 }
@@ -65,7 +87,10 @@
             margin-bottom: 0;
         }
     }
-
+    @media screen and (min-width: $large) {
+        justify-content: center;
+        overflow-x: auto;
+    }
 }
 .section-about-2 {
     margin-bottom: 150px;
@@ -76,5 +101,19 @@
     .text-section-about-2 {
         font-size: 24px;
         color: $interface-black-2;
+    }
+    @media screen and (min-width: $large) {
+        display: flex;
+        justify-content: space-between;
+        width: 953px;
+        margin-left: auto;
+        margin-right: auto;
+        .img-section-about-2 {
+            width: 345px;
+        }
+        .text-section-about-2 {
+            width: 466px;
+            font-size: 32px;
+        }
     }
 }

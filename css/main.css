@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 /* colors */
@@ -63,9 +64,17 @@ body {
   color: #2A2B2E;
 }
 
+.full-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .header {
   max-width: 1440px;
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -129,6 +138,27 @@ body {
   color: #5370D4;
 }
 
+@media screen and (min-width: 992px) {
+  .header .logo-header {
+    width: 230px;
+  }
+  .header .nav {
+    position: static;
+    width: initial;
+  }
+  .header .nav .list-nav {
+    display: flex;
+    padding: 0;
+  }
+  .header .nav .list-nav .item-list {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .header .fas {
+    display: none;
+  }
+}
+
 .footer {
   padding-bottom: 50px;
 }
@@ -160,6 +190,17 @@ body {
 
 .footer .nav-footer .list-nav-footer .item-list-footer a:hover {
   color: #5370D4;
+}
+
+@media screen and (min-width: 576px) {
+  .footer .nav-footer .list-nav-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .nav-footer .list-nav-footer .item-list-footer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .wrap {
@@ -194,6 +235,34 @@ body {
   font-weight: 400;
   font-style: italic;
   color: #5370D4;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero .img-hero {
+    order: 1;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .content-hero .h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero .img-hero {
+    width: 60%;
+  }
 }
 
 .cards-details-container {
@@ -233,6 +302,15 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1400px) {
+  .cards-details-container {
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+    justify-content: center;
+  }
+}
+
 .section-travel {
   margin-bottom: 100px;
 }
@@ -252,6 +330,24 @@ body {
 .section-travel .text-section-travel span {
   font-weight: 400;
   font-style: italic;
+}
+
+@media screen and (min-width: 992px) {
+  .section-travel {
+    display: flex;
+    max-width: 954px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-travel .img-section-travel {
+    width: 345px;
+  }
+  .section-travel .text-section-travel {
+    font-size: 32px;
+    width: 466px;
+  }
 }
 
 .cards-travels {
@@ -298,6 +394,13 @@ body {
   color: #505156;
 }
 
+@media screen and (min-width: 1200px) {
+  .cards-travels {
+    overflow-x: auto;
+    justify-content: center;
+  }
+}
+
 .section-contact {
   display: flex;
   flex-direction: column;
@@ -335,36 +438,30 @@ body {
   margin-bottom: 1rem;
 }
 
-.footer {
-  padding-bottom: 50px;
+@media screen and (min-width: 576px) {
+  .section-contact .form-container {
+    width: 466px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.footer .logo-footer {
-  display: block;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-.footer .nav-footer .list-nav-footer {
-  margin-bottom: 0;
-  margin-top: 0;
-  list-style: none;
-  padding: 0 1.5rem;
-}
-
-.footer .nav-footer .list-nav-footer .item-list-footer {
-  margin-bottom: 0.5rem;
-}
-
-.footer .nav-footer .list-nav-footer .item-list-footer a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #505156;
-}
-
-.footer .nav-footer .list-nav-footer .item-list-footer a:hover {
-  color: #5370D4;
+@media screen and (min-width: 992px) {
+  .section-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 953px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-contact .img-section-contact {
+    width: 345px;
+    order: 1;
+  }
+  .section-contact .form-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
